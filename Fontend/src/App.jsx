@@ -5,7 +5,7 @@ const App = () => {
   const [jokes,setJokes]= useState([])
 
   useEffect(()=>{
-    axios.get('https://sushoapp-1.onrender.com/api/jokes/jokes')
+    axios.get('/api/jokes/jokes')
     .then((res)=>{
       setJokes(res.data)
     })
